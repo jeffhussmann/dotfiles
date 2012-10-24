@@ -24,7 +24,7 @@ do
     fi
 done
 
-PS1_SET_TITLE="\[\e]0;${short_host_name}:\w\a\]"
+PS1_SET_TITLE="\[\e]0;${short_host_name}: \w\a\]"
 
 PS1="${PS1_SET_TITLE}\[\033[01;34m\]\w\[\033[00m\]\$ "
 
