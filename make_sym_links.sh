@@ -3,7 +3,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="bashrc"
+files="bashrc vimrc gvimrc inputrc"
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
