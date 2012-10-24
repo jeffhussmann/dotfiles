@@ -16,7 +16,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-short_host_names="slate cartan lonestar ranger fourierseq"
+short_host_names="slate cartan ls4 ranger fourierseq"
 for name in $short_host_names
 do
     if [[ $HOSTNAME =~ $name ]]; then
@@ -24,7 +24,7 @@ do
     fi
 done
 
-PS1_SET_TITLE="\[\e]0;\u@${short_host_name}:\w\a\]"
+PS1_SET_TITLE="\[\e]0;${short_host_name}:\w\a\]"
 
 PS1="${PS1_SET_TITLE}\[\033[01;34m\]\w\[\033[00m\]\$ "
 
