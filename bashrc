@@ -74,6 +74,8 @@ export PERL5LIB=${HOME}/src/bioperl-1.2.3:${API_PATH}/ensembl/modules:${API_PATH
 if [[ $HOSTNAME =~ slate ]]; then
     export WORK=$HOME
 fi
-
+if [[ $HOSTNAME =~ tacc ]]; then
+    module load python
+fi
 export PYTHONPATH=$HOME/projects/mutations/code
 export CLASSPATH=/usr/local/bin
