@@ -71,6 +71,9 @@ API_PATH=${HOME}/src
 
 export PERL5LIB=${HOME}/src/bioperl-1.2.3:${API_PATH}/ensembl/modules:${API_PATH}/ensembl-compara/modules:${API_PATH}/ensembl-variation/modules:${API_PATH}/ensembl-functgenomics/modules
 # For compatibility with TACC
-export WORK=$HOME
+if [[ $HOSTNAME =~ slate ]]; then
+    export WORK=$HOME
+fi
+
 export PYTHONPATH=$HOME/projects/mutations/code
 export CLASSPATH=/usr/local/bin
