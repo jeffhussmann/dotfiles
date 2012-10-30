@@ -77,8 +77,7 @@ if [[ $HOSTNAME =~ slate ]]; then
 fi
 if [[ $HOSTNAME =~ tacc ]]; then
     module load python
-    module spider python
     PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
 fi
-export PYTHONPATH=$HOME/projects/mutations/code:$HOME/src/biopython-1.60/
+export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/
 export CLASSPATH=/usr/local/bin
