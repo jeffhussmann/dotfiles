@@ -79,5 +79,5 @@ if [[ $HOSTNAME =~ tacc ]]; then
     module load python
     PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
 fi
-export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/
+export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/
 export CLASSPATH=/usr/local/bin
