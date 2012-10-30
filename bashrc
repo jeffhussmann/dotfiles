@@ -73,6 +73,7 @@ export PERL5LIB=${HOME}/src/bioperl-1.2.3:${API_PATH}/ensembl/modules:${API_PATH
 # For compatibility with TACC
 if [[ $HOSTNAME =~ slate ]]; then
     export WORK=$HOME
+    export SCRATCH=$HOME
 fi
 if [[ $HOSTNAME =~ tacc ]]; then
     module load python
