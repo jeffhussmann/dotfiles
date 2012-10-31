@@ -79,5 +79,11 @@ if [[ $HOSTNAME =~ tacc ]]; then
     module load python
     PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
 fi
+
 export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/
 export CLASSPATH=/usr/local/bin
+
+alias slate='ssh -X slate.ices.utexas.edu'
+alias lonestar='ssh jahtacc@lonestar.tacc.utexas.edu'
+alias ranger='ssh jahtacc@ranger.tacc.utexas.edu'
+alias fourier='ssh fourierseq.icmb.utexas.edu'
