@@ -1,7 +1,10 @@
-syntax on
-set number
-set hlsearch
-set mouse=a
+set nocompatible        "not well understood
+syntax enable           "turn on syntax highlighting
+set showcmd             "show commands as they are typed
+set number              "turn on line numbering
+set hlsearch            "highlight search results
+set incsearch           "incremental search
+set mouse=a             "enable mouse support
 set title
 set icon
 autocmd BufEnter * let &titlestring=expand('%:t')
