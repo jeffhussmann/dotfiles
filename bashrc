@@ -6,8 +6,8 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=100000
+HISTFILESIZE=100000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -32,8 +32,6 @@ PS1="${PS1_SET_TITLE}\[\033[01;34m\]\w\[\033[00m\]\$ "
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -73,7 +71,7 @@ export PERL5LIB=${HOME}/src/bioperl-1.2.3:${API_PATH}/ensembl/modules:${API_PATH
 # For compatibility with TACC
 if [[ $HOSTNAME =~ slate ]]; then
     export WORK=$HOME
-    export SCRATCH=$HOME
+    export SCRATCH=${HOME}/scratch
 fi
 if [[ $HOSTNAME =~ tacc ]]; then
     module load python
