@@ -73,8 +73,12 @@ if [[ $HOSTNAME =~ slate ]]; then
     export WORK=$HOME
     export SCRATCH=${HOME}/scratch
 fi
-if [[ $HOSTNAME =~ tacc ]]; then
+if [[ $HOSTNAME =~ ranger ]]; then
     module load python
+    PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
+fi
+if [[ $HOSTNAME =~ ls4 ]]; then
+    module load python/2.7.1-epd
     PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
 fi
 
