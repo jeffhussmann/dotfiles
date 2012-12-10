@@ -16,7 +16,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-short_host_names="slate cartan ls4 ranger fourierseq"
+short_host_names="slate granite cartan ls4 ranger fourierseq"
 for name in $short_host_names
 do
     if [[ $HOSTNAME =~ $name ]]; then
@@ -86,6 +86,7 @@ export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-
 export CLASSPATH=/usr/local/bin
 
 alias slate='ssh -X slate.ices.utexas.edu'
+alias granite='ssh granite.ices.utexas.edu'
 alias lonestar='ssh jahtacc@lonestar.tacc.utexas.edu'
 alias ranger='ssh jahtacc@ranger.tacc.utexas.edu'
 alias fourier='ssh fourierseq.icmb.utexas.edu'
