@@ -1,0 +1,7 @@
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[user]
+    name = Jeff Hussmann
+    email = jeff.hussmann@gmail.com
