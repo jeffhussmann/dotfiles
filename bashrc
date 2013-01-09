@@ -86,7 +86,7 @@ export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-
 export CLASSPATH=/usr/local/bin
 
 alias slate='ssh -X slate.ices.utexas.edu'
-alias granite='ssh granite.ices.utexas.edu'
+alias granite='ssh -X granite.ices.utexas.edu'
 alias lonestar='ssh jahtacc@lonestar.tacc.utexas.edu'
 alias ranger='ssh jahtacc@ranger.tacc.utexas.edu'
 alias fourier='ssh fourierseq.icmb.utexas.edu'
