@@ -55,7 +55,7 @@ preview_sam() {
         file_name=$1
         num_lines=1000
     fi
-    grep -v '^@' $file_name | head -n $num_lines | column -t | vim -
+    grep -v '^@' $file_name | head -n $num_lines | column -t | vim - -R
 }
 
 # enable programmable completion features (you don't need to enable
