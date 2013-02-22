@@ -20,13 +20,3 @@ imap jj <Esc>
 set scrolloff=5
 set wildmode=longest,list,full
 set nowrap
-
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-
-nnoremap <C-n> :call NumberToggle()<cr>

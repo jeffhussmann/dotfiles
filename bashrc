@@ -47,6 +47,17 @@ fastq_reads() {
     expr `wc -l < $1` / 4    
 }
 
+preview() {
+    if [ $# = 2 ]; then
+        file_name=$2
+        num_lines=$1
+    else
+        file_name=$1
+        num_lines=1000
+    fi
+    head -n $num_lines $file_name | vim - -R
+}
+
 preview_sam() {
     if [ $# = 2 ]; then
         file_name=$2
