@@ -6,3 +6,4 @@ colorscheme desert
 
 let &colorcolumn=join(range(81, 999),",")
 hi ColorColumn guibg=#2d2d2d
+highlight clear SignColumn

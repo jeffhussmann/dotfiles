@@ -3,10 +3,14 @@ syntax enable           "turn on syntax highlighting
 set showcmd             "show commands as they are typed
 set number              "turn on line numbering
 set hlsearch            "highlight search results
-set incsearch           "incremental search
+set incsearch           "perform incremental search as they are typed
 set mouse=a             "enable mouse support
+set splitbelow          "open new splits on the bottom
+set splitright          "open new splits on the right
 set title
 set icon
+nnoremap <Bar> <C-W>v<C-W><Right> "Split window vertically
+nnoremap _ <C-W>s<C-W><Down>      "Split window horizontally 
 autocmd BufEnter * let &titlestring=expand('%:t')
 autocmd BufEnter * let &iconstring=expand('%t:t')
 filetype plugin indent on
@@ -20,3 +24,4 @@ imap jj <Esc>
 set scrolloff=5
 set wildmode=longest,list,full
 set nowrap
+highlight clear SignColumn
