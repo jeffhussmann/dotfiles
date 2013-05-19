@@ -90,7 +90,8 @@ if [[ $HOSTNAME =~ ranger ]]; then
 fi
 if [[ $HOSTNAME =~ ls4 ]]; then
     module load python/2.7.1-epd
-    PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
+    #PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
+    PATH=$PATH:$HOME/src/bowtie2-2.1.0/
 fi
 
 export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/
