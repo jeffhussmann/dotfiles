@@ -97,7 +97,7 @@ fi
 export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/
 export CLASSPATH=/usr/local/bin
 
-alias cartan='ssh -X cartan.utexas.edu'
+alias cartan='ssh -X cartan.ices.utexas.edu'
 alias slate='ssh -X slate.ices.utexas.edu'
 alias granite='ssh -X granite.ices.utexas.edu'
 alias lonestar='ssh jahtacc@lonestar.tacc.utexas.edu'
