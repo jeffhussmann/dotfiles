@@ -39,8 +39,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
+alias ll='ls -lF'
+alias la='ls -lA'
 alias l='ls -CF'
 
 fastq_reads() {
@@ -102,3 +102,5 @@ alias granite='ssh -X granite.ices.utexas.edu'
 alias lonestar='ssh jahtacc@lonestar.tacc.utexas.edu'
 alias ranger='ssh jahtacc@ranger.tacc.utexas.edu'
 alias fourier='ssh fourierseq.icmb.utexas.edu'
+
+alias gvim='UBUNTU_MENUPROXY=0 gvim'
