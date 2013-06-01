@@ -80,7 +80,7 @@ API_PATH=${HOME}/src
 
 export PERL5LIB=${HOME}/src/bioperl-1.2.3:${API_PATH}/ensembl/modules:${API_PATH}/ensembl-compara/modules:${API_PATH}/ensembl-variation/modules:${API_PATH}/ensembl-functgenomics/modules
 # For compatibility with TACC
-if [[ $HOSTNAME !~ ls4 ]]; then
+if [[ ! $HOSTNAME =~ ls4 ]]; then
     export WORK=$HOME
     export SCRATCH=${HOME}/scratch
 fi
