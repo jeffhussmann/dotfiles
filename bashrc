@@ -80,17 +80,12 @@ API_PATH=${HOME}/src
 
 export PERL5LIB=${HOME}/src/bioperl-1.2.3:${API_PATH}/ensembl/modules:${API_PATH}/ensembl-compara/modules:${API_PATH}/ensembl-variation/modules:${API_PATH}/ensembl-functgenomics/modules
 # For compatibility with TACC
-if [[ $HOSTNAME =~ slate ]]; then
+if [[ $HOSTNAME !~ ls4 ]]; then
     export WORK=$HOME
     export SCRATCH=${HOME}/scratch
 fi
-if [[ $HOSTNAME =~ ranger ]]; then
-    module load python
-    PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
-fi
 if [[ $HOSTNAME =~ ls4 ]]; then
     module load python/2.7.1-epd
-    #PATH=$PATH:$HOME/src/bowtie2-2.0.0-beta7/
     PATH=$PATH:$HOME/src/bowtie2-2.1.0/
 fi
 
