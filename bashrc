@@ -86,6 +86,7 @@ if [[ ! $HOSTNAME =~ ls4 ]]; then
 fi
 if [[ $HOSTNAME =~ ls4 ]]; then
     module load python/2.7.1-epd
+    module load git
     PATH=$PATH:$HOME/src/bowtie2-2.1.0/
 fi
 
