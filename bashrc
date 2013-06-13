@@ -88,6 +88,7 @@ if [[ $HOSTNAME =~ ls4 ]]; then
     module load python/2.7.1-epd
     module load git
     PATH=$PATH:$HOME/local/bin
+    export LD_LIBRARY_PATH=${HOME}/local/lib/:${LD_LIBRARY_PATH}
 fi
 
 export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/
