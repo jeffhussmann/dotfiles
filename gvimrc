@@ -7,3 +7,8 @@ colorscheme desert
 let &colorcolumn=join(range(81, 999),",")
 hi ColorColumn guibg=#2d2d2d
 highlight clear SignColumn
+
+nnoremap <S-Up> :wincmd k<CR> 
+nnoremap <S-Down> :wincmd j<CR> 
+nnoremap <S-Left> :wincmd h<CR> 
+nnoremap <S-Right> :wincmd l<CR> 
