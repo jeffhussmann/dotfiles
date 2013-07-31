@@ -98,6 +98,7 @@ alias cartan='ssh -X cartan.ices.utexas.edu'
 alias slate='ssh -X slate.ices.utexas.edu'
 alias granite='ssh -X granite.ices.utexas.edu'
 alias lonestar='ssh jahtacc@lonestar.tacc.utexas.edu'
+alias stampede='ssh jahtacc@stampede.tacc.utexas.edu'
 alias fourier='ssh fourierseq.icmb.utexas.edu'
 
 alias gvim='UBUNTU_MENUPROXY=0 gvim'
