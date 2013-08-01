@@ -91,7 +91,7 @@ if [[ $HOSTNAME =~ ls4 ]]; then
     export LD_LIBRARY_PATH=${HOME}/local/lib/:${LD_LIBRARY_PATH}
 fi
 if [[ $HOSTNAME =~ stampede ]]; then
-    module load python/2.7.1-epd
+    module load python
     module load git
     PATH=$PATH:$HOME/local/bin
 fi
