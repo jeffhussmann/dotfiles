@@ -104,3 +104,5 @@ alias stampede='ssh jahtacc@stampede.tacc.utexas.edu'
 alias fourier='ssh fourierseq.icmb.utexas.edu'
 
 alias gvim='UBUNTU_MENUPROXY=0 gvim'
+
+export PRINTER=cp3se
