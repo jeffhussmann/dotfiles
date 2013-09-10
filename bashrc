@@ -29,9 +29,17 @@ do
     fi
 done
 
-PS1_SET_TITLE="\[\e]0;${short_host_name}: \w\a\]"
+#PS1_SET_TITLE="\[\e]0;${short_host_name}: \w\a\]"
 
-PS1="${PS1_SET_TITLE}\[\033[01;34m\]\w\[\033[00m\]\$ "
+#PS1="${PS1_SET_TITLE}\[\033[01;34m\]\w\[\033[00m\]\$ "
+tput sgr 0 0
+
+style_path="\[$(tput bold)$(tput setaf 5)\]"
+#style_path="\[$(tput setaf 4)\]"
+
+# Set the terminal title to the current working directory
+# Build the prompt
+PS1="${style_path}\w\$ \[$(tput sgr0)\]"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
