@@ -1,3 +1,8 @@
+# cartan needs this for sl6 to work
+if [ -r /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
