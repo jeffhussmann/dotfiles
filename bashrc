@@ -98,7 +98,7 @@ if [[ $HOSTNAME =~ stampede ]]; then
     module load python
     PATH=$PATH:$HOME/local/bin
 fi
-export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/:$HOME/local/lib/python2.7/site-packages
+export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/projects/mapreduce/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/:$HOME/local/lib/python2.7/site-packages
 export CLASSPATH=/usr/local/bin
 
 alias cartan='ssh -X cartan.ices.utexas.edu'
