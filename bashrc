@@ -105,6 +105,7 @@ export CLASSPATH=/usr/local/bin
 
 alias cartan='ssh -X cartan.ices.utexas.edu'
 alias slate='ssh -X slate.ices.utexas.edu'
+alias flint='ssh -X flint.ices.utexas.edu'
 alias granite='ssh granite.ices.utexas.edu'
 alias lonestar='ssh jahtacc@lonestar.tacc.utexas.edu'
 alias stampede='ssh jahtacc@stampede.tacc.utexas.edu'
