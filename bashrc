@@ -100,7 +100,11 @@ if [[ $HOSTNAME =~ stampede ]]; then
     module load python
     PATH=$PATH:$HOME/local/bin
 fi
-export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/projects/mapreduce/code:$HOME/projects/arlen/code:$HOME/src/biopython-1.60/:$HOME/src/progressbar-2.3/:$HOME/local/lib/python2.7/site-packages
+if [[ $HOSTNAME =~ slate ]]; then
+    PATH=$PATH:$HOME/src/sratoolkit.2.3.5-2-ubuntu64/bin
+fi
+
+export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/projects/arlen/code:$HOME/projects/sequencing/code:$HOME/local/lib/python2.7/site-packages
 export CLASSPATH=/usr/local/bin
 
 alias cartan='ssh -X cartan.ices.utexas.edu'
