@@ -100,9 +100,8 @@ if [[ $HOSTNAME =~ stampede ]]; then
     module load python
     PATH=$PATH:$HOME/local/bin
 fi
-if [[ $HOSTNAME =~ slate ]]; then
-    PATH=$PATH:$HOME/src/sratoolkit.2.3.5-2-ubuntu64/bin
-fi
+
+PATH=$PATH:$HOME/bin
 
 export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/projects/arlen/code:$HOME/projects/sequencing/code
 export CLASSPATH=/usr/local/bin
