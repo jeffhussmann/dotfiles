@@ -92,7 +92,7 @@ if [[ ! $HOSTNAME =~ tacc ]]; then
     export SCRATCH=${HOME}/scratch
 fi
 if [[ $HOSTNAME =~ ls4 ]]; then
-    module load python/2.7.1-epd
+    module load python/2.7.2-epd
     PATH=$PATH:$HOME/local/bin
     export LD_LIBRARY_PATH=${HOME}/local/lib/:${LD_LIBRARY_PATH}
 fi
