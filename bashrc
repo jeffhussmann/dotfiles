@@ -92,7 +92,7 @@ if [[ ! $HOSTNAME =~ tacc ]]; then
     export SCRATCH=${HOME}/scratch
 fi
 if [[ $HOSTNAME =~ ls4 ]]; then
-    module load python/2.7.1-epd
+    module load python/2.7.2-epd
     PATH=$PATH:$HOME/local/bin
     export LD_LIBRARY_PATH=${HOME}/local/lib/:${LD_LIBRARY_PATH}
 fi
@@ -100,9 +100,8 @@ if [[ $HOSTNAME =~ stampede ]]; then
     module load python
     PATH=$PATH:$HOME/local/bin
 fi
-if [[ $HOSTNAME =~ slate ]]; then
-    PATH=$PATH:$HOME/src/sratoolkit.2.3.5-2-ubuntu64/bin
-fi
+
+PATH=$PATH:$HOME/bin
 
 export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/projects/ribosomes/code:$HOME/projects/sequencing/code
 export CLASSPATH=/usr/local/bin
