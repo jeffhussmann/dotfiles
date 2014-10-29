@@ -118,4 +118,4 @@ alias gvim='UBUNTU_MENUPROXY=0 gvim'
 
 export PRINTER=cp3se
 
-export ASCP_KEY='/home/jah/.aspera/connect/etc/asperaweb_id_dsa.openssh'
+export ASCP_KEY=$HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh
