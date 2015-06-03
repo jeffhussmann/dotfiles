@@ -76,6 +76,17 @@ preview_sam() {
     grep -v '^@' $file_name | head -n $num_lines | column -t | vim - -R
 }
 
+preview_bam() {
+    if [ $# = 2 ]; then
+        file_name=$2
+        num_lines=$1
+    else
+        file_name=$1
+        num_lines=1000
+    fi
+    preview_sam $num_lines <(samtools view $file_name)
+}
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
