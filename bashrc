@@ -33,7 +33,7 @@ done
 
 PS1_SET_TITLE="\[\e]0;${short_host_name}: \w\a\]"
 
-PS1="${PS1_SET_TITLE}\[\e[1;35m\] \d \[\e[1;32m\]\A\[\e[m\] \h \[\e[1;34m\]\w\n$\[\e[m\] "
+PS1="${PS1_SET_TITLE}\[\e[1;35m\]\d \[\e[1;32m\]\A\[\e[m\] \h \[\e[1;34m\]\w\n$\[\e[m\] "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
