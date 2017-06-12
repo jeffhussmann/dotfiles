@@ -3,7 +3,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="bashrc vimrc gvimrc inputrc gitconfig"
+files="bashrc vimrc gvimrc inputrc gitconfig gtkrc-2.0"
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
