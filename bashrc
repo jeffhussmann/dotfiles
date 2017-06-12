@@ -97,7 +97,6 @@ fi
 
 API_PATH=${HOME}/src
 
-export PERL5LIB=${HOME}/src/bioperl-1.2.3:${API_PATH}/ensembl/modules:${API_PATH}/ensembl-compara/modules:${API_PATH}/ensembl-variation/modules:${API_PATH}/ensembl-functgenomics/modules
 # For compatibility with TACC
 if [[ ! $HOSTNAME =~ tacc ]]; then
     export WORK=$HOME
@@ -113,7 +112,6 @@ fi
 
 PATH=$PATH:$HOME/bin:$HOME/local/bin:$HOME/.local/bin
 
-export PYTHONPATH=$PYTHONPATH:$HOME/projects/mutations/code:$HOME/projects/ribosomes/code:$HOME/projects/sequencing/code
 export CLASSPATH=/usr/local/bin
 
 alias cartan='ssh -X cartan.ices.utexas.edu'
