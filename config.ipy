@@ -1,0 +1,15 @@
+%load_ext autoreload
+%autoreload 2
+
+%matplotlib inline
+
+import tqdm.notebook; progress = tqdm.notebook.tqdm_notebook
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from pathlib import Path
+from collections import Counter, defaultdict
+
+
+pd.set_option('min_rows', 50)
