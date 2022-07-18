@@ -5,3 +5,5 @@
 [user]
     name = Jeff Hussmann
     email = jeff.hussmann@gmail.com
+[core]
+	editor = vim
