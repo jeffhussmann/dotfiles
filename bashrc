@@ -23,18 +23,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-short_host_names="slate granite cartan ls4 ranger fourierseq"
-for name in $short_host_names
-do
-    if [[ $HOSTNAME =~ $name ]]; then
-        short_host_name=$name
-    fi
-done
-
-PS1_SET_TITLE="\[\e]0;${short_host_name}: \w\a\]"
-
-#PS1="${PS1_SET_TITLE}\n\[\e[1;35m\]\d\[\e[m\] \[\e[1;32m\]\A\[\e[m\]\n\h \[\e[1;34m\]\w\n$\[\e[m\] "
-PS1="${PS1_SET_TITLE}\n\[\e[1;35m\]\d\[\e[m\] \[\e[1;32m\]\A\[\e[m\]\n\[\e[1;34m\]\w\[\e[m\] \h\n\[\e[1;34m\]$\[\e[m\] "
+PS1="\n\[\e[1;35m\]\d\[\e[m\] \[\e[1;32m\]\A\[\e[m\]\n\[\e[1;34m\]\w\[\e[m\] \h\n\[\e[1;34m\]$\[\e[m\] "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -94,8 +83,6 @@ preview_bam() {
     preview_sam $num_lines <(samtools view $file_name)
 }
 
-alias pip3.6='python3.6 -m pip'
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -105,25 +92,9 @@ fi
 
 API_PATH=${HOME}/src
 
-# For compatibility with TACC
-if [[ ! $HOSTNAME =~ tacc ]]; then
-    export WORK=$HOME
-    export SCRATCH=${HOME}/scratch
-fi
-if [[ $HOSTNAME =~ ls4 ]]; then
-    module load python/2.7.2-epd
-    export LD_LIBRARY_PATH=${HOME}/local/lib/:${LD_LIBRARY_PATH}
-fi
-if [[ $HOSTNAME =~ stampede ]]; then
-    module load python
-fi
-
-PATH=$PATH:$HOME/bin:$HOME/local/bin:$HOME/.local/bin
+PATH=$HOME/bin:$HOME/local/bin:$HOME/.local/bin:$PATH
 
 export CLASSPATH=/usr/local/bin
 
-alias gvim='UBUNTU_MENUPROXY=0 gvim'
-
-export PRINTER=cp3se
-
-export ASCP_KEY=$HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh
+export VISUAL=vim
+export EDITOR="$VISUAL"
