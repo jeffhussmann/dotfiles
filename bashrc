@@ -55,6 +55,12 @@ fastq_reads() {
     expr `wc -l < $1` / 4    
 }
 
+fastqgz_reads() {
+    num_reads=$(expr $(zcat $1 | wc -l) / 4)
+    echo "$1: $num_reads"
+}
+export -f fastqgz_reads
+
 preview() {
     if [ $# = 2 ]; then
         file_name=$2
